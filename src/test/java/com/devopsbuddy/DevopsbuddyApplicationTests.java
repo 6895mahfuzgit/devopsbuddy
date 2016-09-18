@@ -13,6 +13,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class DevopsbuddyApplicationTests {
 
+
+    
     @Autowired
     private I18NService i18NService;
 
