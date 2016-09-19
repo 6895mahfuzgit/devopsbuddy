@@ -35,6 +35,19 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+
+
+        <!-- Spring data jpa dependency-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+		<!-- H2 data base dependency-->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+
 		<!--Bootstrap and Jquery Dependency -->
 		<dependency>
 			<groupId>org.webjars</groupId>
@@ -72,6 +85,9 @@
 			<artifactId>thymeleaf-extras-springsecurity4</artifactId>
 			<version>2.1.2.RELEASE</version>
 		</dependency>
+
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
