@@ -4,6 +4,8 @@ import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by MahfuzCSE'11 on 19-Sep-16.
@@ -52,8 +54,16 @@ public class User implements Serializable {
     private Plan plan;
 
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Set<UserRole> userRoles = new HashSet<>();
 
+    public Set<UserRole> getUserRoles() {
+        return userRoles;
+    }
 
+    public void setUserRoles(Set<UserRole> userRoles) {
+        this.userRoles = userRoles;
+    }
 
     public User() {
     }
